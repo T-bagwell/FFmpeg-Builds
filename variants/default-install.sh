@@ -9,4 +9,10 @@ package_variant() {
 
     mkdir -p "$OUT/doc"
     cp -r "$IN"/share/doc/ffmpeg/* "$OUT"/doc
+
+    mkdir -p "$OUT/lib"
+    cp -r "$IN"/lib/* "$OUT"/lib
+
+    mkdir -p "$OUT/include"
+    cp -r "$IN"/include/* "$OUT"/include
 }
